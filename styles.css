@@ -1,3 +1,24 @@
 body{
+    display: flex;
+    justify-content: center;
     background-color: cadetblue;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: aliceblue;
+    height: 500px;
+    width: 500px;
+}
+
+.innerDiv{    
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    border: 1px solid;
+    
 }
