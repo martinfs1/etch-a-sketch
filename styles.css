@@ -1,24 +1,28 @@
+
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: center;    
     background-color: cadetblue;
     
 }
 
 .container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: aliceblue;
-    height: 500px;
-    width: 500px;
+    flex-flow: row wrap;    
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: aliceblue;    
+    width: 432px; 
 }
 
 .innerDiv{    
-    background-color: red;
-    height: 20px;
-    width: 20px;
-    border: 1px solid;
-    
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border: 1px solid;    
+}
+
+.paintBlack {
+    background-color: black;
 }
