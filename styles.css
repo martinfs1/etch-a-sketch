@@ -7,11 +7,17 @@ body{
     
 }
 
+.askBtn{
+    display: flex;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+}
 .container{
     display: flex;
     flex-flow: row wrap;    
-    flex-grow: 0;
-    flex-shrink: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
     background-color: aliceblue;    
     width: 432px; 
 }
