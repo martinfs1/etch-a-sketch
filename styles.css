@@ -1,10 +1,11 @@
-
+*{
+    box-sizing: border-box;
+}
 body{
     display: flex;
-    flex-direction: row;
-    justify-content: center;    
+    flex-direction: column;
+    align-items: center;
     background-color: cadetblue;
-    
 }
 
 .askBtn{
@@ -19,13 +20,11 @@ body{
     flex-grow: 1;
     flex-shrink: 1;
     background-color: aliceblue;    
-    width: 432px; 
+    width: 960px; 
 }
 
 .innerDiv{    
-    background-color: white;
-    height: 25px;
-    width: 25px;
+    background-color: white;    
     border: 1px solid;    
 }
 
