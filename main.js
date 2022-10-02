@@ -8,7 +8,7 @@ btn.setAttribute("id", "ask");
 btn.classList.add("askBtn");
 btn.textContent = "Number of squares";
 let answer = 16;
-let numOfSquares = 960 / answer;
+let numOfSquares = (960 / answer);
 let div;
 
 drawDivs(numOfSquares);
@@ -36,7 +36,7 @@ function paint() {
     });
   });
 }
-paint()
+paint();
 
 function reset() {
   let element = document.querySelectorAll("#theDiv");
@@ -46,9 +46,12 @@ function reset() {
 }
 
 btn.addEventListener("click", (e) => {
-  answer = Number.parseInt(prompt("Enter the number of squares (maximum 100)"));
-  numOfSquares = 960 / answer;
+  answer = Number.parseInt(
+    prompt("Enter the number of squares (maximum 100)", 16)
+  );
+
+  numOfSquares = (960 / answer);
   reset();
   drawDivs(numOfSquares);
-  paint()
+  paint();
 });
